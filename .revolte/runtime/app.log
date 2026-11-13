@@ -1,0 +1,33 @@
+
+> ziggy@0.1.0 dev
+> next dev --hostname 0.0.0.0 --port 3000 --hostname 0.0.0.0 --port 4173
+
+▲ Next.js 16.4.6 (Turbopack)
+- Local:         http://localhost:4173
+- Network:       http://0.0.0.0:4173
+✓ Ready in 293ms
+✓ Running next.config took 7ms
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+
+ GET / 200 in 495ms (next.js: 174ms, application-code: 321ms)
+⚠ Blocked cross-origin request to Next.js dev resource /_next/hmr from "4173-ik8irv2f7wjt6ps9d9rzf.sandbox-v2.revolte.io".
+Cross-origin access to Next.js dev resources is blocked by default for safety.
+
+To allow this host in development, add it to "allowedDevOrigins" in next.config.js and restart the dev server:
+
+// next.config.js
+module.exports = {
+  allowedDevOrigins: ['4173-ik8irv2f7wjt6ps9d9rzf.sandbox-v2.revolte.io'],
+}
+
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+ GET / 200 in 41ms (next.js: 1.2ms, application-code: 40ms)
+ GET / 200 in 34ms (next.js: 0.9ms, application-code: 33ms)
+ GET /?q=&cuisine=&sort=rating 200 in 40ms (next.js: 0.9ms, application-code: 39ms)
+ GET /?q=&cuisine=&sort=rating 200 in 62ms (next.js: 1.0ms, application-code: 61ms)
+ GET /?q=&cuisine=&sort=rating 200 in 35ms (next.js: 0.9ms, application-code: 34ms)
+ GET /?q=&cuisine=Italian&sort=rating 200 in 37ms (next.js: 0.9ms, application-code: 36ms)
