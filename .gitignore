@@ -1,0 +1,13 @@
+node_modules/
+.next/
+out/
+*.db
+*.db-*
+.env*
+!.env.example
+*.tsbuildinfo
+core
+core.*
+*.heapsnapshot
+report.*.json
+isolate-*.log

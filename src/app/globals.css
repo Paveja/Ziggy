@@ -1,0 +1,59 @@
+@import "tailwindcss";
+@theme {
+  --color-background: #fffaf3;
+  --color-foreground: #30251f;
+  --color-card: #ffffff;
+  --color-card-foreground: #30251f;
+  --color-primary: #ad3c16;
+  --color-primary-foreground: #ffffff;
+  --color-muted: #f5e9dc;
+  --color-muted-foreground: #716052;
+  --color-border: #e8d9ca;
+  --color-ring: #ad3c16;
+  --color-success: #246742;
+  --color-destructive: #b42318;
+  --radius-control: 12px;
+  --radius-container: 16px;
+  --color-food: #df8e37;
+  --color-leaf: #588246;
+  --color-plate: #fffaf0;
+  --color-topping: #a83d24;
+}
+@theme inline {
+  --font-heading: var(--font-display);
+  --font-sans: var(--font-body);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #221c18;
+    --color-foreground: #fff5e9;
+    --color-card: #302720;
+    --color-card-foreground: #fff5e9;
+    --color-primary: #ffb28e;
+    --color-primary-foreground: #392015;
+    --color-muted: #42362c;
+    --color-muted-foreground: #d5c0ae;
+    --color-border: #594637;
+    --color-ring: #ffb28e;
+    --color-success: #9cdbad;
+    --color-destructive: #ffada5;
+  }
+}
+@keyframes enter {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@utility discovery-enter {
+  animation: enter 240ms ease-out both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .discovery-enter {
+    animation: none;
+  }
+}
